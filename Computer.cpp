@@ -2,11 +2,14 @@
 
 #include "Computer.h"
 
-Human(){};
+Computer::Computer(){name = "Computer", move = 'R';};
 
-Human(std::string name){};
+Computer::Computer(std::string name){ name = "Computer", move = 'R';};
 
-std::string getName(){
-    if (name == ""){name == "Computer"; return name;}
-    else{return name;}
+char Computer::makeMove(){return move;};
+
+std::string Computer::getName(){
+    name = "Computer"; 
+    return name;
 };
+

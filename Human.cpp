@@ -2,16 +2,16 @@
 
 #include "Human.h"
 
-Human(){};
+Human::Human(){name = "Human";};
 
-Human(std::string name){};
+Human::Human(std::string input){name = input;};
 
-char makeMove(){
-    std::cout >> "Choose R, P or S : ";
-    std::cin << move << std::endl;
+char Human::makeMove(){
+    std::cout << "Enter move:";
+    std::cin >> move;
+    return move;
 };
 
-std::string getName(){
-    if (name == ""){return "null";}
-    else{return name;}
+std::string Human::getName(){
+    return name;
 };

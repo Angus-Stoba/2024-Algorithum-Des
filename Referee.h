@@ -18,8 +18,7 @@ using namespace std;
 
 class Referee {
 public:
-    char makeMove();
-    string getName();
+    Player* refGame(Player* player1, Player* player2);
 };
 
 #endif

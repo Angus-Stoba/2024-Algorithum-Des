@@ -7,14 +7,12 @@
 #include <iostream>
 #include <string>
 
-class Human {
-protected:
-    std::string name = Human;
-    char move;
+#include "Player.h"
 
+class Human : public Player {
 public:
     Human();
-    Human(std::string name);
+    Human(std::string input);
     char makeMove();
     std::string getName();
     

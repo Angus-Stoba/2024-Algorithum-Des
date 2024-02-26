@@ -12,15 +12,16 @@
 #include <iostream>
 #include <string>
 
-#include "Human.h"
-#include "Computer.h"
-
 using namespace std;
 
 class Player { // : public human & computer
-public:
-    char makeMove();
-    string getName();
+protected:
+    string name;
+    char move;
+
+public:    
+    virtual char makeMove();
+    virtual string getName();
 };
 
 #endif

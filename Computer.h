@@ -7,13 +7,15 @@
 #include <iostream>
 #include <string>
 
-class Computer {
-protected:
-    std::string name;
-    char move = 'R';
+#include "Player.h"
 
+class Computer : public Player {
 public:
-    std::string getName();
+    Computer();
+    Computer(std::string name);
+    char makeMove();
+    std::string getName(); 
 };
+
 
 #endif

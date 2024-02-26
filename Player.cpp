@@ -1,8 +1,11 @@
-char makeMove(){
-    if(char == ""){std::cout >> "Choose R, P or S : "; std::cin << move << std::endl;};
+// Funcitons of Player.h
+
+#include "Player.h"
+
+char Player::makeMove(){
+    return move;
 };
 
-std::string getName(){
-    if (name == ""){return "null";}
-    else{return name;}
+std::string Player::getName(){
+    return name;
 };
