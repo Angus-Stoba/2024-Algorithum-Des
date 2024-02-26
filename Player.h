@@ -17,7 +17,7 @@
 
 using namespace std;
 
-class Player {
+class Player { // : public human & computer
 public:
     char makeMove();
     string getName();
