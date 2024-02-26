@@ -1,5 +1,11 @@
-// Alternative Player Type
-// Can Have 2 in a game
+// Computer is derived from Player class
+/*
+    Contains constuctors: 
+    - Computer()
+    - Computer(<string>)
+        - Computer class's name is always "Computer"
+    Changes the functions of makeMove() and getName() functions from Player
+*/
 
 #ifndef COMPUTER_H
 #define COMPUTER_H
@@ -9,12 +15,17 @@
 
 #include "Player.h"
 
+using namespace std;
+
 class Computer : public Player {
 public:
+    //Constructors
     Computer();
-    Computer(std::string name);
+    Computer(string name);
+
+    //Functions
     char makeMove();
-    std::string getName(); 
+    string getName(); 
 };
 
 

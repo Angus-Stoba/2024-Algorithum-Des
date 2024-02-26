@@ -1,10 +1,8 @@
 // Player Class,
 /*
-    Contains:
-    Human & Computer Classes
-    Playable Moves
+    Abstract class for Human and Computer Classes
 */
-// 2 Player Maximum
+
 
 #ifndef PLAYER_H
 #define PLAYER_H
@@ -14,13 +12,13 @@
 
 using namespace std;
 
-class Player { // : public human & computer
+class Player { 
 protected:
     string name;
     char move;
 
 public:    
-    virtual char makeMove();
+    virtual char makeMove();    // Virtual for Human and Computer Classes to alter
     virtual string getName();
 };
 

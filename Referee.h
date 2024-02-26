@@ -1,8 +1,10 @@
-// Player Class,
+// Referee Class
 /*
-    Contains:
-    Human & Computer Classes
-    Playable Moves
+    Contains constuctor:
+    - Referee()
+    Function:
+    - Player* refGame(Player* player1, Player* player2);
+        - Function takes 'move' variable from 2 players and determins which of the two wins (if not ties)
 */
 // 2 Player Maximum
 
@@ -18,6 +20,10 @@ using namespace std;
 
 class Referee {
 public:
+    //Constructor
+    Referee();
+
+    //Function
     Player* refGame(Player* player1, Player* player2);
 };
 

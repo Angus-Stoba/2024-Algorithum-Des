@@ -2,16 +2,18 @@
 
 #include "Human.h"
 
+using namespace std;
+
 Human::Human(){name = "Human";};
 
-Human::Human(std::string input){name = input;};
+Human::Human(string input){name = input;};
 
 char Human::makeMove(){
-    std::cout << "Enter move:";
-    std::cin >> move;
+    cout << "Enter move:";
+    cin >> move;
     return move;
 };
 
-std::string Human::getName(){
+string Human::getName(){
     return name;
 };
