@@ -26,8 +26,7 @@ int main(){
     if(output == nullptr){cout << "It's a Tie" << endl;}
     else if(output == Steve){cout << Steve->getName() << " Wins" << endl;}
     else if(output == Steve2){cout << (Steve2->getName()) << " Wins" << endl;}
-    else if(output == 0){cout << "invalid input" << endl;}
-    else{cout << "Error" << endl;} // if Human inputs invalid input
+    else{cout << "Error" << endl;} 
 
     // Just to remove this from unneeded storage
     delete output;
