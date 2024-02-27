@@ -2,8 +2,6 @@
 
 #include "Computer.h"
 
-using namespace std;
-
 Computer::Computer(){name = "Computer", move = 'R';};
 
 Computer::Computer(string name){ name = "Computer", move = 'R';};

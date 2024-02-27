@@ -2,8 +2,6 @@
 
 #include "Human.h"
 
-using namespace std;
-
 Human::Human(){name = "Human";};
 
 Human::Human(string input){name = input;};

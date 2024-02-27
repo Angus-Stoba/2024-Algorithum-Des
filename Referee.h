@@ -20,7 +20,7 @@ using namespace std;
 
 class Referee {
 public:
-    //Constructor
+    // Constructor
     Referee();
 
     //Function

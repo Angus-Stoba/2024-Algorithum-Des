@@ -17,7 +17,8 @@ protected:
     string name;
     char move;
 
-public:    
+public:  
+  
     virtual char makeMove();    // Virtual for Human and Computer Classes to alter
     virtual string getName();
 };
