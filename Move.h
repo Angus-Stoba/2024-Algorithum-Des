@@ -1,10 +1,4 @@
-// Move is to check what moves are week / strong to others
-/*
-    e.g. rock is strong to paper, rock is week to paper
-        - use variables to show how this works
-
-
-*/
+// Move returns the move name 
 
 #ifndef MOVE_H
 #define MOVE_H

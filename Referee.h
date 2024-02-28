@@ -15,6 +15,7 @@
 #include <string>
 
 #include "Player.h"
+#include "winningCon.h"
 
 using namespace std;
 

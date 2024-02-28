@@ -13,25 +13,25 @@ using namespace std;
 int main(){
 
     // Player Creation
-    Player* Steve = new Human("Steve");
-    Player* Steve2 = new Computer("Steve2");
+    Player* Player1 = new Human("Steve");
+    Player* Player2 = new Human("Jane");
 
     // Referee Creation
     Referee Game1;
     
     // Running Rock Paper Scissors game between players
-    Player* output = Game1.refGame(Steve, Steve2);
+    Player* output = Game1.refGame(Player1, Player2);
 
     // Code to cout the winner of the game
     if(output == nullptr){cout << "It's a Tie" << endl;}
-    else if(output == Steve){cout << Steve->getName() << " Wins" << endl;} // "else {cout << output->getName() << " Wins" << endl;}"
-    else if(output == Steve2){cout << (Steve2->getName()) << " Wins" << endl;}
+    else if(output == Player1){cout << Player1->getName() << " Wins" << endl;} // "else {cout << output->getName() << " Wins" << endl;}"
+    else if(output == Player2){cout << (Player2->getName()) << " Wins" << endl;}
     else{cout << "Error" << endl;} 
 
 
     // Just to remove this from unneeded storage
-    delete Steve;
-    delete Steve2;
+    delete Player1;
+    delete Player2;
 
 
     return 0;
