@@ -30,7 +30,8 @@ int main(){
 
 
     // Just to remove this from unneeded storage
-    delete output;
+    delete Steve;
+    delete Steve2;
 
     return 0;
 }
