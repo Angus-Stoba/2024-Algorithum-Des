@@ -4,6 +4,7 @@
     e.g. rock is strong to paper, rock is week to paper
         - use variables to show how this works
 */
+
 #ifndef WINNINGCON_H
 #define WINNINGCON_H
 
