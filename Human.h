@@ -23,7 +23,7 @@ public:
     Human(string input);
 
     //Functions
-    char makeMove();
+    string makeMove();
     string getName();
     
 };

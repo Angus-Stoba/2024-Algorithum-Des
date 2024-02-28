@@ -6,7 +6,7 @@ Human::Human(){name = "Human";};
 
 Human::Human(string input){name = input;};
 
-char Human::makeMove(){
+string Human::makeMove(){
     cout << "Enter move:";
     cin >> move;
     return move;

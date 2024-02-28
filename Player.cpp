@@ -2,7 +2,7 @@
 
 #include "Player.h"
 
-char Player::makeMove(){
+string Player::makeMove(){
     return move;
 };
 

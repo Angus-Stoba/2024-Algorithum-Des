@@ -24,7 +24,7 @@ public:
     Computer(string name);
 
     //Functions
-    char makeMove();
+    string makeMove();
     string getName(); 
 };
 

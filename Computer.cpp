@@ -6,7 +6,7 @@ Computer::Computer(){name = "Computer", move = 'R';};
 
 Computer::Computer(string name){ name = "Computer", move = 'R';};
 
-char Computer::makeMove(){return move;};
+string Computer::makeMove(){return move;};
 
 string Computer::getName(){
     name = "Computer"; 
