@@ -21,6 +21,7 @@ public:
   
     virtual string makeMove();    // Virtual for Human and Computer Classes to alter
     virtual string getName();
+    virtual string getMove();
 };
 
 #endif

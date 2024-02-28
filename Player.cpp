@@ -3,9 +3,13 @@
 #include "Player.h"
 
 string Player::makeMove(){
-    return move;
+    return 0;
 };
 
 string Player::getName(){
     return name;
 };
+
+string Player::getMove(){
+    return move;
+}
