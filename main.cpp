@@ -24,9 +24,10 @@ int main(){
 
     // Code to cout the winner of the game
     if(output == nullptr){cout << "It's a Tie" << endl;}
-    else if(output == Steve){cout << Steve->getName() << " Wins" << endl;}
+    else if(output == Steve){cout << Steve->getName() << " Wins" << endl;} // "else {cout << output->getName() << " Wins" << endl;}"
     else if(output == Steve2){cout << (Steve2->getName()) << " Wins" << endl;}
     else{cout << "Error" << endl;} 
+
 
     // Just to remove this from unneeded storage
     delete output;
