@@ -8,16 +8,14 @@
 
 #include "Player.h"
 
+using namespace std;
+
 
 class Move {
 private:
-    Player* inputPlayer;
+    string moveName;
 
 public:
-    // Constructors
-    Move();
-    Move(Player* playerInput);
-
     string getName(); // returns player's move
     //string getMove(); // should be the name of getName()
 
