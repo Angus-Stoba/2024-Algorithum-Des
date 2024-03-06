@@ -2,7 +2,7 @@
 
 #include "Move.h"
 
-string Move::getName(){return inputPlayer->getMove();}
+string Move::getName(){return moveName;}
 
 
 
