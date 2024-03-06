@@ -17,7 +17,7 @@
 #include "Player.h"
 #include "winningCon.h"
 
-using namespace std;
+//using namespace std;
 
 class Referee {
 public:

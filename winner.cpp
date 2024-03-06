@@ -1,5 +1,5 @@
 // Functions of winner.h
-
+/*
 #include "winner.h"
 #include "Player.h"
 #include "winningCon.h"
@@ -28,3 +28,5 @@ string Winner::getWinner(){
     return "INV";
 
 }
+
+*/

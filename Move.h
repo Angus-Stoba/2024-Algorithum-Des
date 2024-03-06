@@ -7,15 +7,14 @@
 #include <vector>
 #include <string>
 
-#include "Player.h"
-
 using namespace std;
 
 
 class Move {
-private:
+protected:
     string moveName;
 public:
+    Move();
     vector<string> winsAgainst;
     string getName(); // returns player's move
     //string getMove(); // should be the name of getName()

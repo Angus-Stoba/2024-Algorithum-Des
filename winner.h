@@ -1,5 +1,5 @@
 // Provides winner of rps / mrn game
-
+/*
 #ifndef WINNER_H
 #define WINNER_H
 
@@ -18,11 +18,12 @@ protected:
 public:
     // Constructor
     Winner();
-    Winner(string input1, string input2);
 
     //Function
-    string getWinner();
+    string getWinner(Move * p1move, Move * p2move);
 
 };
 
 #endif
+
+*/

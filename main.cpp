@@ -14,7 +14,7 @@ int main(){
 
     // Player Creation
     Player* Player1 = new Human("Steve");
-    Player* Player2 = new Human("Jane");
+    Player* Player2 = new Computer("Jane");
 
     // Referee Creation
     Referee Game1;

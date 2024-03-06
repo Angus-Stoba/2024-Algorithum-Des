@@ -9,10 +9,14 @@ Human::Human(string input){name = input;};
 
 Move * Human::makeMove(){
     string input;
+    moveFactory factory; 
+    
     cout << "Enter move:";
     cin >> input;
     
-    move moveFactory(input);
+    movePlayer = factory.winningConditions(input);
+
+    return movePlayer;
 };
 
 string Human::getName(){

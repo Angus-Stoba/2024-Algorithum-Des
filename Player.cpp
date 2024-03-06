@@ -2,7 +2,7 @@
 
 #include "Player.h"
 
-string Player::makeMove(){
+Move * Player::makeMove(){
     return 0;
 };
 
@@ -10,6 +10,6 @@ string Player::getName(){
     return name;
 };
 
-string Player::getMove(){
-    return move;
+Move * Player::getMove(){
+    return movePlayer;
 }

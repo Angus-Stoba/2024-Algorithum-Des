@@ -5,6 +5,8 @@
         - use variables to show how this works
 */
 
+/*
+
 #ifndef WINNINGCON_H
 #define WINNINGCON_H
 
@@ -40,3 +42,5 @@ public:
 };
 
 #endif
+
+*/

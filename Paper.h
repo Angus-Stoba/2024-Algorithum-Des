@@ -10,9 +10,7 @@
 
 using namespace std;
 
-class Paper : private Move {
-private:
-    
+class Paper : public Move {
 public:
     Paper();
 };

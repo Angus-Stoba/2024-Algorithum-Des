@@ -2,11 +2,11 @@
 
 #include "Computer.h"
 
-Computer::Computer(){name = "Computer", move = "Rock";};
+Computer::Computer(){name = "Computer", movePlayer = new Rock;};
 
-Computer::Computer(string name){ name = "Computer", move = "Rock";};
+Computer::Computer(string name){ name = "Computer", movePlayer = new Rock;};
 
-string Computer::makeMove(){return move;};
+Move * Computer::makeMove(){return movePlayer;};
 
 string Computer::getName(){
     name = "Computer"; 

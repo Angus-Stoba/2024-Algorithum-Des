@@ -1,5 +1,5 @@
 // Functions of winningCon.h
-
+/*
 #include "winningCon.h"
 
 winningCon::winningCon(){};
@@ -98,3 +98,4 @@ string* winningCon::mrnLoss(string input){
     else {return lossZombie;}
 }
 
+*/

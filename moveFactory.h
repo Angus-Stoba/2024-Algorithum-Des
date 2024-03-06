@@ -12,7 +12,7 @@
 class moveFactory {
 public:
     moveFactory();
-    moveFactory(string input);
+    Move * winningConditions(string input);
 };
 
 #endif
