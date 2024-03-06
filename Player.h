@@ -9,17 +9,18 @@
 
 #include <iostream>
 #include <string>
+#include "Move.h"
 
 using namespace std;
 
 class Player { 
 protected:
     string name;
-    string move;
+    Move * move;
 
 public:  
   
-    virtual string makeMove();    // Virtual for Human and Computer Classes to alter
+    virtual Move * makeMove();    // Virtual for Human and Computer Classes to alter
     virtual string getName();
     virtual string getMove();
 };

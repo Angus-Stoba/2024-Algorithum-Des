@@ -10,9 +10,6 @@
 #ifndef COMPUTER_H
 #define COMPUTER_H
 
-#include <iostream>
-#include <string>
-
 #include "Player.h"
 
 using namespace std;
@@ -24,7 +21,7 @@ public:
     Computer(string name);
 
     //Functions
-    string makeMove();
+    Move * makeMove();
     string getName(); 
 };
 

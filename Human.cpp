@@ -1,15 +1,18 @@
 // Defines class "Human"'s functions
 
 #include "Human.h"
+#include "moveFactory.h"
 
 Human::Human(){name = "Human";};
 
 Human::Human(string input){name = input;};
 
-string Human::makeMove(){
+Move * Human::makeMove(){
+    string input;
     cout << "Enter move:";
-    cin >> move;
-    return move;
+    cin >> input;
+    
+    move moveFactory(input);
 };
 
 string Human::getName(){

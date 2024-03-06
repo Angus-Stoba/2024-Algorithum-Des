@@ -1,0 +1,1 @@
+// switch each case of each string to constructor of each move

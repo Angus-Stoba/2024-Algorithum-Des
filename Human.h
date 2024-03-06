@@ -9,9 +9,6 @@
 #ifndef HUMAN_H
 #define HUMAN_H
 
-#include <iostream>
-#include <string>
-
 #include "Player.h"
 
 using namespace std;
@@ -23,7 +20,7 @@ public:
     Human(string input);
 
     //Functions
-    string makeMove();
+    Move * makeMove();
     string getName();
     
 };
