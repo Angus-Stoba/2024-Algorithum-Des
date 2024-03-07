@@ -17,7 +17,7 @@
 class moveFactory {
 public:
     moveFactory();
-    Move * moveTransformer(string input);
+    Move * moveTransformer(string input); // converts the string input into it's correlating class
 };
 
 #endif

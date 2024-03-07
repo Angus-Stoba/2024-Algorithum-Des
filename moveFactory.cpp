@@ -1,4 +1,4 @@
-// switch each case of each string to constructor of each move
+// functions of moveFactory
 
 #include "moveFactory.h"
 
