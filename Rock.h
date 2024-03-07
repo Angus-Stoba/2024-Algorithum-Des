@@ -13,6 +13,7 @@ using namespace std;
 class Rock : public Move {
 public:
     Rock();
+    vector<string> get_winsAgainst();
 };
 
 #endif

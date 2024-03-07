@@ -13,6 +13,7 @@ using namespace std;
 class Paper : public Move {
 public:
     Paper();
+    vector<string> get_winsAgainst();
 };
 
 #endif

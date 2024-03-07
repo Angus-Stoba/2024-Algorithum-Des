@@ -13,9 +13,10 @@ using namespace std;
 class Move {
 protected:
     string moveName; // A self label of the move
+    vector<string> winsAgainst; // a vector of the possible moves the class can beat
 public:
     Move();
-    vector<string> winsAgainst; // a vector of the possible moves the class can beat
+    virtual vector<string> get_winsAgainst(); // return the winsAgainst vector
     virtual string getName(); // returns player's move
     //string getMove(); // should be the name of getName()
 

@@ -13,6 +13,7 @@ using namespace std;
 class Ninja : public Move {
 public:
     Ninja();
+    vector<string> get_winsAgainst();
 };
 
 #endif

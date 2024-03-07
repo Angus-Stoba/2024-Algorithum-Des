@@ -6,3 +6,7 @@ Zombie::Zombie(){
     winsAgainst = {"Pirate", "Monkey"};
     moveName = "Zombie";
 }
+
+vector<string> Zombie::get_winsAgainst(){
+    return winsAgainst;
+}

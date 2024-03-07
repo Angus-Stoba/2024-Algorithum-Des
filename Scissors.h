@@ -13,6 +13,7 @@ using namespace std;
 class Scissors : public Move {
 public:
     Scissors();
+    vector<string> get_winsAgainst();
 };
 
 #endif

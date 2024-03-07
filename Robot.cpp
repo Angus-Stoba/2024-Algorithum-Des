@@ -6,3 +6,7 @@ Robot::Robot(){
     winsAgainst = {"Ninja", "Zombie"};
     moveName = "Robot";
 }
+
+vector<string> Robot::get_winsAgainst(){
+    return winsAgainst;
+}

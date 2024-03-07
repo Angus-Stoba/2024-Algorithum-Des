@@ -13,6 +13,7 @@ using namespace std;
 class Robot : public Move {
 public:
     Robot();
+    vector<string> get_winsAgainst();
 };
 
 #endif
