@@ -1,11 +1,24 @@
 // Functions of winningCon.h
-/*
-#include "winningCon.h"
 
+#include "winningCondition.h"
+/*
 winningCon::winningCon(){};
 winningCon::winningCon(string inputMove){move = inputMove;};
-
+*/
 // Functions
+bool winningCondition::winningMove(string p1moveName, vector<string> p2win){
+    for (const auto& element : p2win) {
+        if (p1moveName == element){
+            return true;
+        }
+    }
+    return false;
+
+}
+
+
+
+/*
 string* winningCon::getStronger(){
     if(move == "Rock" || move == "Paper" || move == "Scissors"){
         return rpsWin(move);

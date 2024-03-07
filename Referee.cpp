@@ -1,8 +1,5 @@
 // Referee.h Constructor Printout
 
-#include "Player.h"
-#include "winner.h"
-#include "winningCon.h"
 #include "Referee.h"
 
 Referee::Referee(){}
@@ -13,8 +10,12 @@ Player* Referee::refGame(Player* player1, Player* player2){
     p1move = player1->makeMove(); // ask player 1 to make a move
     p2move = player2->makeMove(); // ask player 2 to make a move
 
+    winningCondition game; 
+
     if(p1move->getName() == p2move->getName()){return nullptr;}
-    else{return player1;}
+    else if(game.winningMove(p2move->getName(),p1move->winsAgainst) == true){return player1;}
+    else if(game.winningMove(p1move->getName(),p2move->winsAgainst) == true){return player2;}
+    {return nullptr;}
 
     /*
     if(WinPlayer == "P1"){return player1;}

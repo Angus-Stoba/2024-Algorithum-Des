@@ -14,7 +14,7 @@ Move * Human::makeMove(){
     cout << "Enter move:";
     cin >> input;
     
-    movePlayer = factory.winningConditions(input);
+    movePlayer = factory.moveTransformer(input);
 
     return movePlayer;
 };
