@@ -4,4 +4,5 @@
 
 Paper::Paper(){
     winsAgainst = {"Rock"};
+    moveName = "Paper";
 }

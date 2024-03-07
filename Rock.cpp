@@ -4,4 +4,5 @@
 
 Rock::Rock(){
     winsAgainst = {"Scissors"};
+    moveName = "Rock";
 }

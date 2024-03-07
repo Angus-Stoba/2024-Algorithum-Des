@@ -13,7 +13,7 @@ Player* Referee::refGame(Player* player1, Player* player2){
     p1move = player1->makeMove(); // ask player 1 to make a move
     p2move = player2->makeMove(); // ask player 2 to make a move
 
-    if(p1move == p2move){return nullptr;}
+    if(p1move->getName() == p2move->getName()){return nullptr;}
     else{return player1;}
 
     /*

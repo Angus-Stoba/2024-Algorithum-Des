@@ -4,4 +4,5 @@
 
 Scissors::Scissors(){
     winsAgainst = {"Paper"};
+    moveName = "Scissors";
 }

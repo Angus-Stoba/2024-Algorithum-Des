@@ -16,7 +16,7 @@ protected:
 public:
     Move();
     vector<string> winsAgainst;
-    string getName(); // returns player's move
+    virtual string getName(); // returns player's move
     //string getMove(); // should be the name of getName()
 
 
