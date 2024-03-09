@@ -20,6 +20,7 @@ public:
     //Functions
     Move * makeMove();
     string getName();
+    Move * getMove();
     
 };
 

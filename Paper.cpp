@@ -10,3 +10,7 @@ Paper::Paper(){
 vector<string> Paper::get_winsAgainst(){
     return winsAgainst;
 }
+
+string Paper::getName(){
+    return moveName;
+}

@@ -14,6 +14,7 @@ class Paper : public Move {
 public:
     Paper();
     vector<string> get_winsAgainst();
+    string getName();
 };
 
 #endif

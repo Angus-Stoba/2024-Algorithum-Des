@@ -10,3 +10,7 @@ Robot::Robot(){
 vector<string> Robot::get_winsAgainst(){
     return winsAgainst;
 }
+
+string Robot::getName(){
+    return moveName;
+}

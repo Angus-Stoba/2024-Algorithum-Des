@@ -10,3 +10,7 @@ Rock::Rock(){
 vector<string> Rock::get_winsAgainst(){
     return winsAgainst;
 }
+
+string Rock::getName(){
+    return moveName;
+}

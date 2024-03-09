@@ -13,3 +13,7 @@ string Computer::getName(){
     return name;
 };
 
+Move * Computer::getMove(){
+    return movePlayer;
+};
+

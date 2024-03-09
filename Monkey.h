@@ -13,6 +13,8 @@ using namespace std;
 class Monkey : public Move {
 public:
     Monkey();
+    vector<string> get_winsAgainst();
+    string getName();
 };
 
 #endif

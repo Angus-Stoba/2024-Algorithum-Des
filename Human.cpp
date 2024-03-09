@@ -22,3 +22,7 @@ Move * Human::makeMove(){
 string Human::getName(){
     return name;
 };
+
+Move * Human::getMove(){
+    return movePlayer;
+};

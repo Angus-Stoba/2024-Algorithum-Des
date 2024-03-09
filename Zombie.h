@@ -14,6 +14,7 @@ class Zombie : public Move {
 public:
     Zombie();
     vector<string> get_winsAgainst();
+    string getName();
 };
 
 #endif

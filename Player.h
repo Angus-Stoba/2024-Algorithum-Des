@@ -18,9 +18,8 @@ class Player {
 protected:
     string name;
     Move * movePlayer;
-
+    
 public:  
-  
     virtual Move * makeMove();    // Virtual for Human and Computer Classes to alter
     virtual string getName();
     virtual Move * getMove();

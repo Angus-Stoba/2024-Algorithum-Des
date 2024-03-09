@@ -10,3 +10,7 @@ Ninja::Ninja(){
 vector<string> Ninja::get_winsAgainst(){
     return winsAgainst;
 }
+
+string Ninja::getName(){
+    return moveName;
+}

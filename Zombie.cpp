@@ -10,3 +10,7 @@ Zombie::Zombie(){
 vector<string> Zombie::get_winsAgainst(){
     return winsAgainst;
 }
+
+string Zombie::getName(){
+    return moveName;
+}

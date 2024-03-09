@@ -14,6 +14,7 @@ class Robot : public Move {
 public:
     Robot();
     vector<string> get_winsAgainst();
+    string getName();
 };
 
 #endif

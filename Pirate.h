@@ -14,6 +14,7 @@ class Pirate : public Move {
 public:
     Pirate();
     vector<string> get_winsAgainst();
+    string getName();
 };
 
 #endif

@@ -10,3 +10,7 @@ Scissors::Scissors(){
 vector<string> Scissors::get_winsAgainst(){
     return winsAgainst;
 }
+
+string Scissors::getName(){
+    return moveName;
+}

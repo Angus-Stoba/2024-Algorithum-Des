@@ -10,3 +10,7 @@ Pirate::Pirate(){
 vector<string> Pirate::get_winsAgainst(){
     return winsAgainst;
 }
+
+string Pirate::getName(){
+    return moveName;
+}

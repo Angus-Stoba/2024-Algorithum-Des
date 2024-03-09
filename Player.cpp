@@ -7,9 +7,9 @@ Move * Player::makeMove(){
 };
 
 string Player::getName(){
-    return name;
+    return 0;
 };
 
 Move * Player::getMove(){
-    return movePlayer;
-}
+    return 0;
+};

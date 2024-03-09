@@ -8,5 +8,7 @@ vector<string> Move::get_winsAgainst(){
     return winsAgainst;
 }
 
-string Move::getName(){return moveName;}
+string Move::getName(){
+    return moveName;
+}
 

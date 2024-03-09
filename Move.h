@@ -20,7 +20,6 @@ public:
     virtual string getName(); // returns player's move
     //string getMove(); // should be the name of getName()
 
-
 };
 
 #endif

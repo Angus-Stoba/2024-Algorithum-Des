@@ -14,6 +14,7 @@ class Rock : public Move {
 public:
     Rock();
     vector<string> get_winsAgainst();
+    string getName();
 };
 
 #endif
