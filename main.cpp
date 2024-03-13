@@ -3,12 +3,13 @@
 #include <iostream>
 
 #include "Truckloads.h"
+#include "Reverser.h"
 
 int main(){
 
     Truckloads shipment1;
 
-    int inputCrates = 1024;
+    int inputCrates = 19;
     int inputLoadSize = 5;
 
     int Trucks;
@@ -17,4 +18,28 @@ int main(){
 
 
     std::cout << "Number of trucks = " << Trucks << std::endl;
+
+
+    Reverser reverse;
+
+    int forwardNumber = 12345;
+    std::string forwardString = "Hello";
+
+    int reversedNumber;
+    std::string reversedString;
+
+    reversedNumber = reverse.reverseDigit(forwardNumber);
+    std::cout << "Reversed Number = " << reversedNumber << std::endl;
+    
+    /*
+    std::string newStr = "hello";
+    int strLen = newStr.size();
+    std::cout << "Str = " << newStr << " | size = " << strLen << std::endl;
+
+    */
+    
+    reversedString = reverse.reverseString(forwardString);
+    std::cout << "Reversed String = " << reversedString << std::endl;
+    
+
 }
