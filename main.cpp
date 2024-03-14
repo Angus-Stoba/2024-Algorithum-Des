@@ -22,7 +22,7 @@ int main(){
 
     Reverser reverse;
 
-    int forwardNumber = 12345;
+    int forwardNumber = 521;
     std::string forwardString = "Hello";
 
     int reversedNumber;
@@ -31,12 +31,6 @@ int main(){
     reversedNumber = reverse.reverseDigit(forwardNumber);
     std::cout << "Reversed Number = " << reversedNumber << std::endl;
     
-    /*
-    std::string newStr = "hello";
-    int strLen = newStr.size();
-    std::cout << "Str = " << newStr << " | size = " << strLen << std::endl;
-
-    */
     
     reversedString = reverse.reverseString(forwardString);
     std::cout << "Reversed String = " << reversedString << std::endl;

@@ -11,6 +11,8 @@ using namespace std;
 
 
 class Reverser {
+protected:
+    int reversedSum = 0;
 public:
     int reverseDigit(int value);
     string reverseString(string characters);

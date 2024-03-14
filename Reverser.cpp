@@ -3,11 +3,13 @@
 #include "Reverser.h"
 
 int Reverser::reverseDigit(int value){
-    if (value < 10){
-        return value;
+    int sum;
+    if (value <= 0){
+        return reversedSum;    
     }
     else {
-        return value % 10 + (10 * reverseDigit(value / 10));
+        reversedSum = reversedSum * 10 + value % 10;
+        return reverseDigit(value/10);
     };
 }
 
