@@ -7,7 +7,6 @@ int Reverser::reverseDigit(int value){
         return -1;
     }
     else if (value == 0){
-        //reversedSum = 0;
         return reversedSum; 
     }
     else {
