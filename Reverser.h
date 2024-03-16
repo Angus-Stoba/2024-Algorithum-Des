@@ -11,12 +11,11 @@ using namespace std;
 
 class Reverser {
 private:
-    int revSum = 0;
-    int i = 0;
+    int reverseAddition = 0; // Active counter of the reverse variable for reverseDigit
+    int reverseSum = 0;      // Final outputted variable for reverseDigit
+    bool recursionBool = false;
 public:
     int reverseDigit(int value);
-    //int reverseDigitHelper(int value, int revSum); // used so "revSum" is reset per use case
-
     string reverseString(string characters);
 };
 

@@ -7,39 +7,29 @@ int Reverser::reverseDigit(int value){
         return -1;
     }
     else if (value == 0){
-        return i; 
+        if(recursionBool == true){
+            recursionBool = false;                                  // Resets bool
+            return reverseSum;                                      // Returns the final sum
+        }
+        else{
+            return 0;                                               // this if / else statement is for if '0' is the input number (would not trigger a recursion)
+        }
     }
     else {
         if(value < 10){
-            i = revSum;
-            revSum = 0;
-            i = i * 10 + value % 10;
-            return reverseDigit(value/10); // as revSum goes through each recursion, it increases to the revered value
+            recursionBool = true;                                   // Used to validate if a recursion has occured
+
+            reverseSum = reverseAddition;                           // copy reverseAddition to reverseSum
+            reverseAddition = 0;                                    // reset reverseAddition for future reverseDigit uses
+            reverseSum = reverseSum * 10 + value % 10;              // final use of the formula
+            return reverseDigit(value/10);                          
         }
         else{
-            revSum = revSum * 10 + value % 10;
-            return reverseDigit(value/10); // as revSum goes through each recursion, it increases to the revered value
+            reverseAddition = reverseAddition * 10 + value % 10;    // formula for reversing a digit 
+            return reverseDigit(value/10);                         
         }
     };
-
-    /*
-    else{
-        int revSum = 0;
-        return reverseDigitHelper(value, revSum);
-    }
-    */
 }
-/*
-int Reverser::reverseDigitHelper(int value, int revSum){
-    if (value == 0){
-        return revSum; 
-    }
-    else {
-        revSum = revSum * 10 + value % 10;
-        return reverseDigitHelper(value/10, revSum); // as revSum goes through each recursion, it increases to the revered value
-    };
-}
-*/
 
 string Reverser::reverseString(string characters){
     if(characters.size() == 0){ // Input String Validation
