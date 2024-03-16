@@ -13,7 +13,7 @@ int Reverser::reverseDigit(int value){
         revSum = revSum * 10 + value % 10;
         i++;
         cout << "i = " << i << endl;
-        return reverseDigitHelper(value/10, revSum); // as revSum goes through each recursion, it increases to the revered value
+        return reverseDigit(value/10); // as revSum goes through each recursion, it increases to the revered value
     };
 
     /*
@@ -23,7 +23,7 @@ int Reverser::reverseDigit(int value){
     }
     */
 }
-
+/*
 int Reverser::reverseDigitHelper(int value, int revSum){
     if (value == 0){
         return revSum; 
@@ -33,7 +33,7 @@ int Reverser::reverseDigitHelper(int value, int revSum){
         return reverseDigitHelper(value/10, revSum); // as revSum goes through each recursion, it increases to the revered value
     };
 }
-
+*/
 
 string Reverser::reverseString(string characters){
     if(characters.size() == 0){ // Input String Validation
