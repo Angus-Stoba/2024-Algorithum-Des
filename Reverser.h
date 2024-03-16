@@ -14,6 +14,8 @@ private:
     int reversedSum = 0; // Used to hold the revered total value for reverseDigit throughout recursions
 public:
     int reverseDigit(int value);
+    int reverseDigitHelper(int value, int revSum);
+
     string reverseString(string characters);
 };
 

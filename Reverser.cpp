@@ -3,15 +3,35 @@
 #include "Reverser.h"
 
 int Reverser::reverseDigit(int value){
+    
+    
     if (value < 0){ // Input Value Validation
         return -1;
     }
+    else{
+        int revSum = 0;
+        return reverseDigitHelper(value, revSum);
+    }
+    
+    
+    /*
     else if (value == 0){
         return reversedSum; 
     }
     else {
         reversedSum = reversedSum * 10 + value % 10;
         return reverseDigit(value/10);
+    };
+    */
+}
+
+int Reverser::reverseDigitHelper(int value, int revSum){
+    if (value == 0){
+        return revSum; 
+    }
+    else {
+        revSum = revSum * 10 + value % 10;
+        return reverseDigitHelper(value/10, revSum);;
     };
 }
 

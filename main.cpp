@@ -22,7 +22,7 @@ int main(){
 
     Reverser reverse;
 
-    int forwardNumber = 12345;
+    int forwardNumber = 1234567890;
     std::string forwardString = "Hello in esreveR";
 
     int reversedNumber;
