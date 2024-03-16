@@ -10,6 +10,9 @@
 using namespace std;
 
 class Reverser {
+private:
+    int revSum = 0;
+    int i = 0;
 public:
     int reverseDigit(int value);
     int reverseDigitHelper(int value, int revSum); // used so "revSum" is reset per use case
