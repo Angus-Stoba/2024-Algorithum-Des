@@ -22,8 +22,8 @@ int main(){
 
     Reverser reverse;
 
-    int forwardNumber = 521;
-    std::string forwardString = "Hello";
+    int forwardNumber = 1234567890;
+    std::string forwardString = "Hello in esreveR";
 
     int reversedNumber;
     std::string reversedString;

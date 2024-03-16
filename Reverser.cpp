@@ -3,8 +3,10 @@
 #include "Reverser.h"
 
 int Reverser::reverseDigit(int value){
-    int sum;
-    if (value <= 0){
+    if (value < 0){ // Input Value Validation
+        return -1;
+    }
+    else if (value == 0){
         return reversedSum;    
     }
     else {
@@ -15,7 +17,10 @@ int Reverser::reverseDigit(int value){
 
 
 string Reverser::reverseString(string characters){
-    if (characters.size() == 1){
+    if(characters.size() == 0){ // Input String Validation
+        return "ERROR";
+    }
+    else if (characters.size() == 1){
         return characters;
     }
     else {

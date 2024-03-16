@@ -9,10 +9,9 @@
 
 using namespace std;
 
-
 class Reverser {
-protected:
-    int reversedSum = 0;
+private:
+    int reversedSum = 0; // Used to hold the revered total value for reverseDigit throughout recursions
 public:
     int reverseDigit(int value);
     string reverseString(string characters);
