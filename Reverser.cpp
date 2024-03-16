@@ -7,7 +7,8 @@ int Reverser::reverseDigit(int value){
         return -1;
     }
     else if (value == 0){
-        return reversedSum;    
+        //reversedSum = 0;
+        return reversedSum; 
     }
     else {
         reversedSum = reversedSum * 10 + value % 10;
@@ -21,7 +22,7 @@ string Reverser::reverseString(string characters){
         return "ERROR";
     }
     else if (characters.size() == 1){
-        return characters;
+        return characters; 
     }
     else {
         int strLen = characters.length();        

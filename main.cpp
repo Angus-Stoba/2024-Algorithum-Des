@@ -29,11 +29,9 @@ int main(){
     std::string reversedString;
 
     reversedNumber = reverse.reverseDigit(forwardNumber);
-    std::cout << "Reversed Number = " << reversedNumber << std::endl;
-    
+    std::cout << "Reversed Number = " << reversedNumber << std::endl;    
     
     reversedString = reverse.reverseString(forwardString);
     std::cout << "Reversed String = " << reversedString << std::endl;
-    
 
 }
