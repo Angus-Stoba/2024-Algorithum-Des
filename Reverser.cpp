@@ -3,8 +3,6 @@
 #include "Reverser.h"
 
 int Reverser::reverseDigit(int value){
-    
-    
     if (value < 0){ // Input Value Validation
         return -1;
     }
@@ -12,17 +10,6 @@ int Reverser::reverseDigit(int value){
         int revSum = 0;
         return reverseDigitHelper(value, revSum);
     }
-    
-    
-    /*
-    else if (value == 0){
-        return reversedSum; 
-    }
-    else {
-        reversedSum = reversedSum * 10 + value % 10;
-        return reverseDigit(value/10);
-    };
-    */
 }
 
 int Reverser::reverseDigitHelper(int value, int revSum){
@@ -31,7 +18,7 @@ int Reverser::reverseDigitHelper(int value, int revSum){
     }
     else {
         revSum = revSum * 10 + value % 10;
-        return reverseDigitHelper(value/10, revSum);;
+        return reverseDigitHelper(value/10, revSum); // as revSum goes through each recursion, it increases to the revered value
     };
 }
 

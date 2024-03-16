@@ -12,7 +12,7 @@ using namespace std;
 class Reverser {
 public:
     int reverseDigit(int value);
-    int reverseDigitHelper(int value, int revSum);
+    int reverseDigitHelper(int value, int revSum); // used so "revSum" is reset per use case
 
     string reverseString(string characters);
 };
