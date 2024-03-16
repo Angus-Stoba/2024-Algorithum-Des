@@ -7,13 +7,19 @@ int Reverser::reverseDigit(int value){
         return -1;
     }
     else if (value == 0){
-        return revSum; 
+        return i; 
     }
     else {
-        revSum = revSum * 10 + value % 10;
-        i++;
-        cout << "i = " << i << endl;
-        return reverseDigit(value/10); // as revSum goes through each recursion, it increases to the revered value
+        if(value < 10){
+            i = revSum;
+            revSum = 0;
+            i = i * 10 + value % 10;
+            return reverseDigit(value/10); // as revSum goes through each recursion, it increases to the revered value
+        }
+        else{
+            revSum = revSum * 10 + value % 10;
+            return reverseDigit(value/10); // as revSum goes through each recursion, it increases to the revered value
+        }
     };
 
     /*
