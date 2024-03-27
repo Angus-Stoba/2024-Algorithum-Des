@@ -11,7 +11,7 @@ vector<int> Finder::findSubstrings(string s1, string s2) {
         size_t found = s1.find(s2.substr(0, i), index);
         if (found != string::npos) {
             result.push_back(found);
-            index = found + 1;
+            index = found;
         } else {
             for(int j = i; i <= s2.size(); i++) {
                 result.push_back(-1);

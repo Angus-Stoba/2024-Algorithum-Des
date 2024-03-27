@@ -6,9 +6,9 @@ int main(){
     
     Finder findVals;
 
-    string s1 = "445145624567";
+    string s1 = "734658732465";
 
-    string s2 = "456789";
+    string s2 = "463";
 
     vector<int> newVector;
 
